@@ -1,5 +1,5 @@
 [ ] CLI scaffold | npx create‑shadcn-lib one‑shot project setup
--[ ] CLI entrypoint & arg parsing | build with tsx + commander
+-[ ] CLI entrypoint & arg parsing | node experimental-strip-types (v23) + clack + commander + chalk
 --[ ] Accept project name / output dir | prompt if missing
 --[ ] Exit gracefully if Node < 18 | version gate
 -[ ] File template generator | copy + EJS substitutions
@@ -8,7 +8,6 @@
 --[ ] ESLint + Prettier config files | opinionated defaults
 -[ ] Unit tests for scaffold | Vitest snapshots
 --[ ] Snapshot generated tree | ensure deterministic output
-
 [ ] add command | shadcn add <component> pulls source locally
 -[ ] Component registry lookup | local JSON or remote URL
 --[ ] Validate requested name | fallback list if invalid
@@ -18,7 +17,6 @@
 --[ ] Update barrel exports | index.ts re‑export
 -[ ] Duplicate‑guard tests | unit + e2e
 --[ ] Warn if component already exists | require --force
-
 [ ] Local theme tokens | single source of design truth
 -[ ] Define theme.css.ts | CSS vars + default values
 --[ ] Radius, spacing, colors, motion tokens | minimal AA palette
@@ -27,7 +25,6 @@
 --[ ] plugin() that maps vars → theme() | zero runtime
 -[ ] Snapshot tests | tokens compile correctly
 --[ ] Contrast audit script | Radix a11y checker
-
 [ ] Preview & docs site | live sandbox for every component
 -[ ] Storybook setup | React 18 + MDX docs
 --[ ] Autogenerate stories from component folders | zero config
@@ -36,7 +33,6 @@
 --[ ] Custom webpack/Vite config | alias to local source
 -[ ] Deploy workflow | GitHub Pages on main
 --[ ] Action to build & push static site | cache dependencies
-
 [ ] Build pipeline | deliver ESM + CJS with types
 -[ ] tsup config | multi‑entry from components/*
 --[ ] Generate *.d.ts | preserve JSX generics
@@ -45,7 +41,6 @@
 --[ ] Verify tree‑shaking via size‑limit | < 2 kB per comp
 -[ ] CI job ≤ 3 min | pnpm + turbo cache
 --[ ] Cache node_modules & tsbuildinfo | speed boosts
-
 [ ] publish command | one‑liner share to npm
 -[ ] Pre‑publish guard | lint → type‑check → test → build
 --[ ] Abort on any red status | clear error output
@@ -54,7 +49,6 @@
 --[ ] Push tags to origin | fail if repo dirty
 -[ ] npm publish --access public | scoped packages
 --[ ] Verify 2FA / OTP flow | prompt when required
-
 [ ] pull (consume) command | import a remote component
 -[ ] Resolve source (git URL / npm pkg) | accept shorthand
 --[ ] Download & untar or git clone | temp dir
