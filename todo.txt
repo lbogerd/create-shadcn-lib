@@ -1,6 +1,6 @@
 [ ] CLI scaffold | npx create‑shadcn-lib one‑shot project setup
 -[ ] CLI entrypoint & arg parsing | node experimental-strip-types (v23) + clack + commander + chalk
---[ ] Accept project name / output dir | prompt if missing
+--[x] Accept project name / output dir | prompt if missing
 --[ ] Exit gracefully if Node < 18 | version gate
 -[ ] File template generator | copy + EJS substitutions
 --[ ] Tailwind config preset | shadcn tokens included
