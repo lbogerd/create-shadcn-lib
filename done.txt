@@ -1,0 +1,3 @@
+
+# 2025-05-10T21:41:01.315Z
+--[x] Exit gracefully if Node < 18 | version gate
